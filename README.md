@@ -1,4 +1,4 @@
-jeanine.github.io
+# Jeanine's Github Home Page
 =================
 
-Jeanine's test Github Pages website
+This is a demo for the June 24th Github Class
