@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+  
+		    <link rel="stylesheet" href="./assets/css/reserva.css" />
+	        <link rel="stylesheet" href="./assets/css/style2.css" />
+
+  <script src='assets/js/jquery-1.8.3.min.js'></script>
+<script src='assets/js/app.js'></script>
+  
+  <link href="assets/favicon.ico" rel="shortcut icon">
+  <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
+  
+  <title>ABOUT</title>
+  
+</head>
+
+<body>
+
+  <header>
+    <nav>
+  <ul>
+    <li></li>
+  </ul>
+</nav>
+  </header>
+
+  <section>
+    <!DOCTYPE html>
+	<html>
+	    <head>
+	        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	        <meta name="viewport" content="width=device-width initial-scale=1">
+	        <link rel="shortcut icon" href="./images/favicon.ico">
+	        <title>Emerging into the Greater Community &amp; Surviving in Separation by Jeanine Butler</title>
+	        <link rel="stylesheet" href="http://gwenbell.com/static/reserva.css" />
+	        <link rel="stylesheet" href="http://gwenbell.com/static/style.css" />
+
+	    </head>
+	    <body>
+	        <div class="container">
+	        <div class="twelve columns">
+	         <style>
+	    h1 { font-style: bold;
+		 font-size: 1.4em; }
+	  </style>
+
+	<h1>JEANINE BUTLER</h1>
+	<p>2014-05-18</p>
+
+	<ul>
+
+	<li>2014-05-20 <a href="./knowledge">Knowledge</a>
+
+	<li>2014-05-18 <a href="./themystery">The Mystery</a></li>
+
+
+	<li>2014-05-12 <a href="./first">First post</a></li>
+
+	</ul>
+
+	        <hr />
+
+	<p><img src="./assets/j9.jpg" style="width:35%; float:left; margin-right:1em;" class="profile"></p><p>I'm <a href="./about">Jeanine Butler</a>. I live in Boulder, CO. I work for the Society for the New Message. My life purpose is to help bring the New Message to the world. <a href="http://newmessage.org">The New Message</a></p>        
+
+	<p><a href="./about">About</a> | <a href="./">Current</a> | <a href="mailto:j9@vartooka.com">Contact</a> </p>
+
+	</div>
+	        </div>
+	        </body>
+	</html>
+
+	
+  </section>
+  
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(OpenSans-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("./assets/OpenSans-RegularItalic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(OpenSans-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(OpenSans-LightItalic.ttf);
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(OpenSans-Bold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(OpenSans-BoldItalic.ttf);
+  font-weight: 600;
+  font-style: italic;
+}
+
+body {
+
+  background: #fefefe;
+
+  font-family: "OpenSans", sans-serif;
+  margin-top: 3em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "OpenSans", sans-serif;
+}
+p,
+li,
+.button {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 300;
+}
+pre {
+  border: 1px solid #f5f5f5;
+  background: #fff;
+  font-family: "OpenSans", monospace;
+  margin-bottom: 1em;
+}
+code {
+  border-radius: 5px;
+}
+mark {
+  background: #ffff66;
+  font: #fff;
+}
+
+.circular {
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	}
